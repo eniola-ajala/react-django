@@ -1,28 +1,3 @@
-// import React, { Component } from 'react';
-// );
-//   }
-
-//   render() {
-//     return (
-//       <div>
-//         <h1>Data From Django Server</h1>
-        
-//         {this.state.details.map((output, id) => (
-//           <div key={id}>
-//             <h2>{output.food}</h2>
-//             <h3>{output.ingredient}</h3>
-//           </div>
-//         ))}
-//       </div>
-//     );
-//   }
-// }
-
-// export default App;
-
-
-
-
 import React, { Component } from 'react';
 import axios from 'axios';
 
