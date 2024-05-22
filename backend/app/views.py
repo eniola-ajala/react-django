@@ -1,11 +1,13 @@
 from django.shortcuts import render
-
 from rest_framework.views import APIView
+from . models import *
 from rest_framework.response import Response
-from .models import React
-from .serializer import ReactSerializer
+from . serializer import *
+# Create your views here.
+
 
 class ReactView(APIView):
+
     serializer_class = ReactSerializer
 
     def get(self, request):
@@ -14,6 +16,7 @@ class ReactView(APIView):
         return Response(output)
 
     def post(self, request):
+
         serializer = ReactSerializer(data=request.data)
         if serializer.is_valid(raise_exception=True):
             serializer.save()
