@@ -1,25 +1,5 @@
 // import React, { Component } from 'react';
-// import axios from 'axios';
-
-// class App extends Component {
-//   state = {
-//     details: []
-//   };
-
-//   componentDidMount() {
-//     axios.get('http://localhost:8000/')
-//       .then(res => {
-//         if (res.data && Array.isArray(res.data)) { // Check if response data is not empty
-//           this.setState({
-//             details: res.data
-//           });
-//         } else {
-//           console.error('Invalid response data:', res.data);
-//         }
-//       })
-//       .catch(err => {
-//         console.error("Error fetching data:", err);
-//       });
+// );
 //   }
 
 //   render() {
